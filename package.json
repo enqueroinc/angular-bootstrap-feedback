@@ -1,16 +1,16 @@
 {
-  "name": "angular-bootstrap-feedback",
-  "version": "1.0.2",
+  "name": "angularjs-bootstrap-feedback",
+  "version": "1.0.1",
   "description": "User feedback form for angular with screenshot and highlighting",
-  "main": "./dist",
-  "homepage": "https://robertyoung.github.io/angular-bootstrap-feedback/",
+  "main": ["./dist/angularjs-bootstrap-feedback.min.js", "./dist/angularjs-bootstrap-feedback.styles.min.css"],
+  "homepage": "https://enqueroinc.github.io/angular-bootstrap-feedback/",
   "directories": {
     "example": "examples"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Robert Young",
+  "author": "Enquero Inc",
   "license": "MIT",
   "devDependencies": {
     "angular-mocks": "^1.5.5",

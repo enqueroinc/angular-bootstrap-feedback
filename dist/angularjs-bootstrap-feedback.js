@@ -1,8 +1,8 @@
 /**
- * angular-bootstrap-feedback - User feedback form for angular with screenshot and highlighting
- * @author Robert Young
- * @version v1.0.2
- * @link https://robertyoung.github.io/angular-bootstrap-feedback/
+ * angularjs-bootstrap-feedback - User feedback form for angular with screenshot and highlighting
+ * @author Enquero Inc
+ * @version v1.0.0
+ * @link https://enqueroinc.github.io/angular-bootstrap-feedback/
  * @license MIT
  * This file is auto-generated. Please modify the Typescript related file.
  */
@@ -206,23 +206,20 @@ var AngularBootstrapFeedback;
         };
         Factory.prototype.takeScreenshot = function () {
             var _this = this;
-            var options = {
-                onrendered: function (canvas) {
-                    _this.isScreenshotMode = false;
-                    _this.showModal();
-                    _this.destroyCanvas();
-                    canvas.style.width = '100%';
-                    canvas.style.borderRadius = '12px';
-                    _this.$timeout(function () {
-                        _this.screenshotBase64 = canvas.toDataURL();
-                        if (_this.options.screenshotTaken)
-                            _this.options.screenshotTaken(_this.screenshotBase64, canvas);
-                    });
-                }
-            };
             this.hideModal();
             this.hideSendFeedback();
-            html2canvas(document.body, options);
+            html2canvas(document.body).then(function (canvas) {
+                _this.isScreenshotMode = false;
+                _this.showModal();
+                _this.destroyCanvas();
+                canvas.style.width = '100%';
+                canvas.style.borderRadius = '12px';
+                _this.$timeout(function () {
+                    _this.screenshotBase64 = canvas.toDataURL();
+                    if (_this.options.screenshotTaken)
+                        _this.options.screenshotTaken(_this.screenshotBase64, canvas);
+                });
+            });
         };
         Factory.prototype.resetScreenshot = function () {
             this.screenshotBase64 = null;

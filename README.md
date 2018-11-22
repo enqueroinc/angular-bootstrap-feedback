@@ -1,10 +1,10 @@
 # angular-bootstrap-feedback
 [![GitHub version](https://badge.fury.io/gh/RobertYoung%2Fangular-bootstrap-feedback.svg)](https://badge.fury.io/gh/RobertYoung%2Fangular-bootstrap-feedback)
 [![Bower version](https://badge.fury.io/bo/angular-bootstrap-feedback.svg)](https://badge.fury.io/bo/angular-bootstrap-feedback)
-[![Build Status](https://travis-ci.org/RobertYoung/angular-bootstrap-feedback.svg?branch=master)](https://travis-ci.org/RobertYoung/angular-bootstrap-feedback)
+[![Build Status](https://travis-ci.org/enqueroinc/angular-bootstrap-feedback.svg?branch=master)](https://travis-ci.org/enqueroinc/angular-bootstrap-feedback)
 
 # Overview
-A user feedback modal with screenshot and highlighting functionality built around Angular 1.5+.
+A user feedback modal with screenshot and highlighting functionality built around Angular 1.5+. (Fork from https://github.com/RobertYoung/angular-bootstrap-feedback)
 ##### Features
 * Angular component(s)
 * Modal popup
@@ -16,13 +16,16 @@ A user feedback modal with screenshot and highlighting functionality built aroun
 
 #### Requirements
 * **angular** - 1.5.0+
-* **bootstrap** - 3.3.6+
-* **angular-bootstrap** - 1.3.2+
-* **html2canvas** - 0.4.1+
+* **bootstrap** - 3.3.7+
+* **angular-ui-bootstrap** - 2.5.0+
+* **html2canvas** - 1.0.0-alpha.12+
 
 # Installation
-#### Bower
-    bower install angular-bootstrap-feedback --save
+#### Yarn
+    yarn add angularjs-bootstrap-feedback 
+#### NPM
+    npm install angularjs-bootstrap-feedback --save
+
 #### Manual
 Or, you can download source files straight from this repo, they're located in the `dist` folder.
 Just include the minified version of both `.js` and `.css` files.

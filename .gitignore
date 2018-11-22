@@ -6,3 +6,5 @@ test/**/*.js
 src/**/*.js
 src/**/*.js.map
 coverage
+bower_components
+node_modules

@@ -172,26 +172,22 @@ module AngularBootstrapFeedback {
 
         // Screenshot Methods //
         takeScreenshot() {
-            var options:Html2Canvas.Html2CanvasOptions = {
-                onrendered: canvas => {
-                    this.isScreenshotMode = false;
-                    this.showModal();
-                    this.destroyCanvas();
-
-                    canvas.style.width = '100%';
-                    canvas.style.borderRadius = '12px';
-
-                    this.$timeout(() => {
-                        this.screenshotBase64 = canvas.toDataURL();
-                        if (this.options.screenshotTaken) this.options.screenshotTaken(this.screenshotBase64, canvas);
-                    });
-                }
-            };
-
             this.hideModal();
             this.hideSendFeedback();
 
-            html2canvas(document.body, options);
+            html2canvas(document.body).then(canvas => {
+                this.isScreenshotMode = false;
+                this.showModal();
+                this.destroyCanvas();
+
+                canvas.style.width = '100%';
+                canvas.style.borderRadius = '12px';
+
+                this.$timeout(() => {
+                    this.screenshotBase64 = canvas.toDataURL();
+                    if (this.options.screenshotTaken) this.options.screenshotTaken(this.screenshotBase64, canvas);
+                });
+            })
         }
 
         resetScreenshot() {
