@@ -1,0 +1,8 @@
+title: Angular-bootstrap-feedback
+description: A user feedback helper using angular and bootstrap
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
