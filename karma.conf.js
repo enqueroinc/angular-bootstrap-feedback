@@ -14,12 +14,12 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       // Vendor
-      './bower_components/jquery/dist/jquery.js',
-      './bower_components/bootstrap/dist/js/bootstrap.min.js',
-      './bower_components/angular/angular.min.js',
-      './bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
-      './bower_components/html2canvas/build/html2canvas.min.js',
-      './bower_components/angular-mocks/angular-mocks.js',
+      './node_modules/jquery/dist/jquery.js',
+      './node_modules/bootstrap/dist/js/bootstrap.min.js',
+      './node_modules/angular/angular.min.js',
+      './node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
+      './node_modules/html2canvas/dist/html2canvas.min.js',
+      './node_modules/angular-mocks/angular-mocks.js',
 
       // Source
       './src/lib/*.js',

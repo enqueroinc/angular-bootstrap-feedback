@@ -15,7 +15,7 @@
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
         "sourceMap": true,
-		    "watch": true
+        "watch": true
     },
     "exclude": [
         "node_modules",
