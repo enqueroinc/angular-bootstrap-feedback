@@ -1,6 +1,5 @@
 # angular-bootstrap-feedback
-[![GitHub version](https://badge.fury.io/gh/RobertYoung%2Fangular-bootstrap-feedback.svg)](https://badge.fury.io/gh/RobertYoung%2Fangular-bootstrap-feedback)
-[![Bower version](https://badge.fury.io/bo/angular-bootstrap-feedback.svg)](https://badge.fury.io/bo/angular-bootstrap-feedback)
+[![GitHub version](https://badge.fury.io/gh/enqueroinc%2Fangular-bootstrap-feedback.svg)](https://badge.fury.io/gh/enqueroinc%2Fangular-bootstrap-feedback)
 [![Build Status](https://travis-ci.org/enqueroinc/angular-bootstrap-feedback.svg?branch=master)](https://travis-ci.org/enqueroinc/angular-bootstrap-feedback)
 
 # Overview
